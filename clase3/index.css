@@ -1,0 +1,38 @@
+/* background-color
+background-image: url() linear-gradient(position, color position, color position) radial-gradient(circle||ellipse position, color position, color position) 
+background-repeat: repeat-x repeat-y space round no repeat
+background-position: px % left|center|right|bottom
+background-attachment: scroll fixed
+background-size: contain cover px
+background-clip: border-box padding-box content-box */
+
+.fondo {
+    height: 500px;
+    /* background-color: hsla(150, 75%, 70%, .5); */
+    background-image: url("assets/img.jpg");
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* background-attachment: fixed; */
+    /* background-image: linear-gradient(to right, #12c2e9 20%, #c471ed 40%, #c471ed 60%, #f64f59 80%); */
+    /* background-image: radial-gradient(circle, #12c2e9 1% , #c471ed 30% );
+    background-position: 200px -100px; */
+    padding: 20px;
+    margin:20px;
+    background-clip: padding-box;
+    border: 20px solid black;
+}
+img {
+    width: 200px;
+}
+
+body {
+    margin: 0;
+}
+
+.sprite {
+    background-image: url("assets/sprite.jpg");
+    height: 15px;
+    width: 15px;
+    background-position: -97px -94px;
+}

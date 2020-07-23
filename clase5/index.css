@@ -1,0 +1,104 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    position: fixed;
+    align-items: center;
+    width: 80%;
+    top: 0;
+    z-index: 100;
+}
+
+.encabezado:hover {
+    box-shadow: 0 0 5px #10C35C;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li a {
+    box-sizing: border-box;
+    margin-left: 16px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #10C35C;
+}
+
+.menu ul li a:hover {
+    border: 1px solid #10C35C;
+}
+
+.logo {
+    height: 80px;
+}
+
+.sectionProducts {
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.imagenProduct {
+    background-image: url("assets/vaso.jpg");
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    padding: 16px;
+    position: relative;
+}
+
+.imagenProduct h2 {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: rgba(255,255,255,.5);
+    width: 100%;
+}
+
+.productItem {
+    margin: 16px;
+}
+
+.sectionForm {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.message {
+    text-align: center ;
+    padding: 16px;
+}
+
+.form {
+    padding: 16px;
+}
+
+.input {
+    padding: 8px 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border: 0;
+    width: 45%;
+    background-color: #10C35C;
+    font-family: Helvetica, sans-serif;
+}
+.submit {
+    display: block;
+    
+}
+
+.footer {
+    text-align: center;
+    background-color: #10C35C;
+    padding: 16px;
+}
+
+body {
+    margin: 0;
+}

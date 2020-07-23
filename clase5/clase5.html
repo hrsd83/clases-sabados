@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+:root {
+    --variable: green;
+    --variable2: 24px;
+}
+.uno {
+    color: var(--variable, red)
+}
+
+.tres {
+    font-size: var(--variable2, 12px);
+}
+
+/* transformaciones */
+
+/* 
+    transform: translate(12px, 50%);
+    transform: translateX(2em);
+    transform: translateY(3em);
+    transform: scale(2, 0.5);
+    transform: scaleX(2);
+    transform: scaleY(0.5);
+    transform: rotate(0.5%);
+    transform: skew(30deg, 20deg);
+    transform: skewX(30deg);
+    transform: skewY(1.07rad);
+    transform: translate3d(12px, 50%, 3em);
+    transform: translateZ(2px);
+    transform: scale3d(2.5, 1.2, 0.3);
+    transform: scaleZ(0.3);
+    transform: rotate3d(1, 2.0, 3.0, 10deg);
+    transform: rotateX(10deg);
+    transform: rotateY(10deg);
+    transform: rotateZ(10deg);
+*/
+
+.logo {
+    /* transform: translate(10px, 20px, 1000px); */
+    /* transform: skew(20deg, 20deg); */
+    /* transform: rotate3d(1, 2.0, 3.0, 10deg); */
+    transform: rotateX(10deg);
+}
+
+
+/* TRANSICIONES */
+
+/* 
+transition-property: width;
+transition-duration: 2s;
+transition-timing-function: linear;
+transition-delay: 1s;
+ */
+
+.dos {
+    /* transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
+    transition: font-size 1s, color 1s;
+    font-size: 16px;
+    color: red;
+}
+.dos:hover {
+    font-size: 44px;
+    color: blue;
+}
+
+/* Animaciones */
+
+.tres {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state:paused;
+}
+
+.tres:hover {
+    animation-play-state: running;
+}
+@keyframes pulse {
+    0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: violet;
+    font-size: 22px;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="contenedor">
+    <p class="uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, alias!</p>
+    <p class="dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, alias!</p>
+    <p class="tres">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, alias!</p>
+</div>
+
+<img class="logo" src="assets/logo.png" alt="">
+
+</body>
+</html>
